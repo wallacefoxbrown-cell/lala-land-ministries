@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La La Land — Quartzsite, Arizona</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: linear-gradient(180deg, #1a0a2e 0%, #2d1b4e 40%, #4a2c6a 100%);
+    color: #f5e6c8;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .stars { position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0; }
+  header {
+    text-align:center;
+    padding: 60px 20px 40px;
+    position: relative;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 3.2rem;
+    letter-spacing: 6px;
+    text-shadow: 0 0 20px #ffd700, 0 0 40px #ff6ec7;
+    margin-bottom: 10px;
+  }
+  .tagline {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #ffd700;
+    letter-spacing: 3px;
+  }
+  .moon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    animation: glow 3s ease-in-out infinite;
+  }
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 10px #fff, 0 0 20px #ffd700; }
+    50% { text-shadow: 0 0 30px #fff, 0 0 60px #ffd700; }
+  }
+  main { max-width: 900px; margin: 0 auto; padding: 0 20px 80px; position: relative; z-index: 1; }
+  .card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,215,0,0.3);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(6px);
+  }
+  h2 {
+    color: #ffd700;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(255,215,0,0.3);
+    padding-bottom: 8px;
+  }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .service {
+    background: rgba(255,110,199,0.1);
+    border: 1px solid rgba(255,110,199,0.3);
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+  }
+  .service .icon { font-size: 2rem; margin-bottom: 8px; }
+  .service h3 { color: #ff6ec7; margin-bottom: 6px; }
+  .service p { font-size: 0.95rem; color: #e8d5b7; }
+  .qr-section { text-align: center; }
+  .qr-section img { width: 200px; height: 200px; border-radius: 12px; background: #fff; padding: 10px; }
+  .qr-section p { margin-top: 12px; font-size: 0.9rem; color: #c9a86c; }
+  .contact { text-align: center; }
+  .contact a { color: #ffd700; text-decoration: none; font-size: 1.2rem; }
+  .contact a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+    color: #8a7a9a;
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 2.2rem; letter-spacing: 3px; }
+    .tagline { font-size: 1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+<header>
+  <div class="moon">🌙</div>
+  <h1>LA LA LAND</h1>
+  <p class="tagline">Quartzsite, Arizona — Where the Desert Dreams</p>
+</header>
+<main>
+  <div class="card">
+    <h2>✦ ABOUT</h2>
+    <p>La La Land is a desert sanctuary in Quartzsite — a place to rest, heal, create, and reconnect. Home of La La Land Ministries, an Airbnb retreat, yoga and fitness studio, and a growing community of hands that help each other up.</p>
+  </div>
+  <div class="card">
+    <h2>✦ SERVICES & SPACES</h2>
+    <div class="services">
+      <div class="service"><div class="icon">🏠</div><h3>Airbnb Retreat</h3><p>Master suite, guest rooms, whole-house stays. Desert views, chickens, and peace.</p></div>
+      <div class="service"><div class="icon">🧘</div><h3>Yoga & Fitness Studio</h3><p>Beach-style flow, mermaid fins, and strength work under the Arizona sky.</p></div>
+      <div class="service"><div class="icon">🙏</div><h3>La La Land Ministries</h3><p>Sabbath gatherings, Bible book club, women's and men's ministry, outreach.</p></div>
+      <div class="service"><div class="icon">🎨</div><h3>Art & Cricut Crafts</h3><p>Custom iron-ons, cards, flyers, and one-of-a-kind desert creations.</p></div>
+      <div class="service"><div class="icon">🐶</div><h3>Dog Park & Farm Yard</h3><p>Shade trees, grass, tables, gated play space for four-legged family.</p></div>
+      <div class="service"><div class="icon">🛁</div><h3>Mermaid Pool Plans</h3><p>Zero-entry ADA pool with transfer wall — coming soon for seniors and mermaids alike.</p></div>
+    </div>
+  </div>
+  <div class="card qr-section">
+    <h2>✦ SCAN ME</h2>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fwallacefoxbrown-cell.github.io%2Flala-land-ministries%2F" alt="QR code to La La Land website">
+    <p>Point your camera here — it takes you straight to this page. Share it, save it, spread it.</p>
+  </div>
+  <div class="card contact">
+    <h2>✦ FIND US</h2>
+    <p>733 West Cowell Street<br>Quartzsite, AZ 85346<br><br>
+    <a href="https://www.booking.com" target="_blank">Book a stay →</a><br><br>
+    Questions? Message us on X <a href="https://x.com/LalaBFox" target="_blank">@LalaBFox</a></p>
+  </div>
+</main>
+<footer>
+  Built with love in the Mojave Desert · La La Land Ministries · "Love, be honest, do your best"
+</footer>
+<script>
+  const starsEl = document.getElementById('stars);
+  for (let i = 0; i < 80; i++) {
+    const s = document.createElement('div);
+    s.style.position = 'absolute';
+    s.style.width = Math.random()*2+1+'px';
+    s.style.height = s.style.width;
+    s.style.background = '#fff';
+    s.style.borderRadius = '50%';
+    s.style.left = Math.random()*100+'%';
+    s.style.top = Math.random()*100+'%';
+    s.style.opacity = Math.random()*0.8+0.2;
+    s.style.animation = `twinkle ${Math.random()*4+2}s ease-in-out infinite`;
+    s.style.animationDelay = Math.random()*5+'s';
+    starsEl.appendChild(s);
+  }
+  const style = document.createElement('style);
+  style.textContent = `@keyframes twinkle { 0%,100%{opacity:0.2} 50%{opacity:1} }`;
+  document.head.appendChild(style);
+</script>
+</body>
+</html>
